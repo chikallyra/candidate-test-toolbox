@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body { font-family: 'Inter', sans-serif; }
+.serif-title { font-family: 'Lora', serif; }
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #10b981; border-radius: 10px; }
+.visualizer-layer {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#modalContent {transition: all 0.3s ease-out;}
+
+.modal-closed {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+}
+
+.modal-open {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
